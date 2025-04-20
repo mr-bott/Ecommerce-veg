@@ -1,0 +1,154 @@
+.pm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.pm-add-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #1e293b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pm-add-btn:hover {
+  background: #2563eb;
+}
+
+.pm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.pm-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.pm-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.pm-details {
+  padding: 15px;
+}
+.pm-details p {
+  color: #374151;
+  font-size: 15px;
+  margin: 6px 0;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.pm-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pm-edit, .pm-delete {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pm-edit {
+  background: lightgreen;
+  color: #000;
+}
+
+.pm-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.pm-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pm-form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.pm-form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pm-form-group input,
+.pm-form-group textarea {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.pm-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pm-cancel {
+  background: #94a3b8;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.pm-submit {
+  background: #10b981;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.pm-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.pm-success {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.pm-loader {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.pm-info {
+  text-align: center;
+  font-size: 18px;
+  color: #6b7280;
+}

@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    margin-top: 10vh;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+    color: #1F5924;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .shop-now-button {
+    background-color: #1F5924;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: background 0.3s ease;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #17481b;
+  }
+  
+  .fruits-illustration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Generic Fruit Styles */
+  .fruit {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Tomato */
+  .tomato {
+    width: 80px;
+    height: 80px;
+    background-color: #e63946;
+    border-radius: 50%;
+  }
+  .tomato::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+    background-color: #2a9d8f;
+    clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+  }
+  
+  /* Carrot */
+  .carrot {
+    width: 30px;
+    height: 100px;
+    background-color: #f3722c;
+    border-radius: 20px 20px 5px 5px;
+  }
+  .carrot::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    width: 20px;
+    height: 10px;
+    background-color: #2d6a4f;
+    border-radius: 10px;
+  }
+  
+  /* Lemon */
+  .lemon {
+    width: 60px;
+    height: 80px;
+    background-color: #f9c74f;
+    border-radius: 50% / 60%;
+  }
+  
+  /* Banana */
+  .banana {
+    width: 20px;
+    height: 100px;
+    background-color: #f9c74f;
+    border-radius: 0 50% 50% 0;
+    transform: rotate(25deg);
+  }
+  .banana::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #6c584c;
+    border-radius: 50%;
+  }
+  
+  /* Watermelon */
+  .watermelon {
+    width: 100px;
+    height: 60px;
+    background: radial-gradient(circle at top, #e63946 60%, #90be6d 61%);
+    border-radius: 100px 100px 0 0;
+  }
+  .watermelon::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  /* Broccoli */
+  .broccoli {
+    width: 70px;
+    height: 70px;
+    background-color: #2d6a4f;
+    border-radius: 50%;
+  }
+  .broccoli::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 10px;
+    height: 20px;
+    background-color: #3a5a40;
+    border-radius: 5px;
+  }
+  
+  /* Avocado */
+  .avocado {
+    width: 70px;
+    height: 100px;
+    background-color: #606c38;
+    border-radius: 50% / 60%;
+  }
+  .avocado::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: #3a5a40;
+    border-radius: 50%;
+  }
+  
+  /* Grapes */
+  .grapes {
+    width: 70px;
+    height: 70px;
+  }
+  .grapes::before,
+  .grapes::after {
+    content: '';
+    position: absolute;
+    background-color: #7209b7;
+    border-radius: 50%;
+  }
+  .grapes::before {
+    width: 60px;
+    height: 60px;
+    top: 5px;
+    left: 5px;
+  }
+  .grapes::after {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 25px;
+  }
+  
+  /* Bell Pepper */
+  .bell-pepper {
+    width: 60px;
+    height: 70px;
+    background-color: #f3722c;
+    border-radius: 30%;
+  }
+  .bell-pepper::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 10px;
+    height: 15px;
+    background-color: #2d6a4f;
+    border-radius: 10px;
+  }
+  
+  /* Cucumber */
+  .cucumber {
+    width: 25px;
+    height: 100px;
+    background-color: #2d6a4f;
+    border-radius: 15px;
+  }
+  
+  /* Beet */
+  .beet {
+    width: 70px;
+    height: 70px;
+    background-color: #9d0208;
+    border-radius: 50%;
+  }
+  .beet::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 20px;
+    height: 10px;
+    background-color: #3a5a40;
+    border-radius: 10px;
+  }
+  
+  /* Cabbage */
+  .cabbage {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #90be6d, #43aa8b);
+    border-radius: 50%;
+  }
+  
+  /* --- Responsive Media Queries --- */
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .shop-now-button {
+      padding: 12px 30px;
+      font-size: 1rem;
+    }
+  
+    .fruit {
+      transform: scale(0.9);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .shop-now-button {
+      padding: 10px 25px;
+      font-size: 0.9rem;
+    }
+  
+    .fruits-illustration {
+      gap: 12px;
+    }
+  
+    .fruit {
+      transform: scale(0.8);
+    }
+  }
+
+    .stats-container {
+      width: 100%;
+      background-color: transparent;
+      padding: 60px 20px;
+      font-family: Arial, sans-serif;
+      position: relative;
+      border-radius: 10px;
+    }
+    
+    .stats-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    
+    .stats-header h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #111;
+    }
+    
+    .stats-header p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    
+    .stats-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .stat-card {
+      text-align: center;
+      padding: 20px;
+      width: 250px;
+      margin-bottom: 20px;
+    }
+    
+    .stat-value {
+      font-size: 48px;
+      font-weight: bold;
+      color:  #1F5924;
+      margin-bottom: 10px;
+    }
+    
+    .plus {
+      font-size: 36px;
+    }
+    
+    .stat-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    .stat-subtitle {
+      font-size: 14px;
+      color: #777;
+    }
+    
+   
+    
+    .stats-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    .stats-label {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .stats-icons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .icon {
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+      .stats-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .stat-card {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .stats-footer {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  
