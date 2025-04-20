@@ -72,13 +72,27 @@ const EcommerceHeader = () => {
       {isMobileMenuOpen && (
         <div className="mobile-menu">
           <ul>
-            {["Home", "About", "Services", "Portfolio", "Cart"].map((item) => (
-              <li key={item}>
-                <a href={`#${item.toLowerCase()}`} onClick={toggleMobileMenu}>
-                  {item}
-                </a>
-              </li>
-            ))}
+          <li>
+            <Link to="/" className="logo-link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/products" className="logo-link">
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/my-orders" className="logo-link">
+              Orders
+            </Link>
+          </li>
+          <li>
+            <Link to="/cart" className="logo-link">
+              Cart
+            </Link>
+          </li>
+          <li onClick={() => logout()}   className="logout-btn">LogOut</li>
           </ul>
         </div>
       )}
