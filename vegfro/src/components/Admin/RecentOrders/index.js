@@ -63,6 +63,7 @@ const RecentOrderManagement = () => {
     const quantity = first?.quantity || 1;
     if (items.length === 1) return ` ${quantity} × ${name}`;
     return `${quantity} × ${name} + ${items.length - 1} more`;
+  
   };
 
   if (isLoading) return <Loader />;
@@ -89,8 +90,8 @@ const RecentOrderManagement = () => {
                 <tr key={order._id} className="order-row">
                   <td className="order-id">{order._id}</td>
                   <td className="order-customer">
-                    <div className="customer-name">{order.userId.name}</div>
-                    <div className="customer-email">{order.userId.email}</div>
+                    <div className="customer-name">{order?.userId?.name||"name"}</div>
+                    <div className="customer-email">{order?.userId?.email||"email"}</div>
                   </td>
                   <td className="order-items">
                     <div className="items-summary">
