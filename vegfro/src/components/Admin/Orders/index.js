@@ -76,7 +76,7 @@ const OrderManagement = () => {
 
     const matchesSearch =
       order._id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      order.userId.email.toLowerCase().includes(searchQuery.toLowerCase());
+      order.userId?.email.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesStatus && matchesSearch;
   });
