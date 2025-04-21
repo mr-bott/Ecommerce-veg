@@ -1,4 +1,14 @@
+# Credentails :-
+Admin:-
+email: admin@gmail.com
+password:- Svcet@24
 
+user :- 
+create your own or use below credentails 
+email:demo@gmail.com
+password :- Svcet@24 
+
+LINK :-> https://ecommerce-veg.vercel.app
 # Bulk Vegetables & Fruit Selling E-Commerce Platform
 
 This is a fully developed and feature-rich e-commerce platform designed for selling bulk vegetables and fruits. It includes various features to enhance the user experience and simplify order management for vendors and admins.
