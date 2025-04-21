@@ -158,7 +158,7 @@ const ProductDisplay = () => {
                     </div>
                   </div>
                 </Link>
-                <button className="_add_to_cart_btn">Add to Cart</button>
+                {/* <button className="_add_to_cart_btn">Add to Cart</button> */}
               </div>
             ))
           ) : (
