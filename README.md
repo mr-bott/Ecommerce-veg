@@ -4,7 +4,7 @@ email: admin@gmail.com
 password:- Svcet@24
 
 user :- 
-create your own or use below credentails 
+create your own (or) credentails 
 email:demo@gmail.com
 password :- Svcet@24 
 
